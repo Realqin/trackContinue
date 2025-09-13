@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所有轨迹展示</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>轨迹接续测试</h1>
+    
+    <div id="controls">
+        <label><input type="checkbox" id="showTime"> 时间</label>
+        <label><input type="checkbox" id="showCourse"> 航向</label>
+        <label><input type="checkbox" id="showSpeed"> 航速</label>
+        <label><input type="checkbox" id="showGap"> gap信息</label>
+        <label><input type="checkbox" id="showOriginal" checked> 原始轨迹</label>
+    </div>
+    
+    <div id="container"></div>
+    
+    <!-- 轨迹数据将从 ../tracks/trajectory_data.json 文件中加载 -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3-zoom.v4.min.js"></script>
+        <script>var TRACK_FILES = ["\u6b63\u6837\u672c-1-20250913212540.json", "\u6b63\u6837\u672c-2-20250913212541.json", "\u6b63\u6837\u672c-3-20250913212542.json", "\u6b63\u6837\u672c-4-20250913212543.json", "\u6b63\u6837\u672c-5-20250913212548.json"];</script>
+    <script src="scripts.js"></script>
+</body>
+</html>

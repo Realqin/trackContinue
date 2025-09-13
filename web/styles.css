@@ -1,0 +1,65 @@
+/* styles.css */
+body {
+    margin: 0;
+    overflow: auto;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+#controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#controls label {
+    margin-right: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+#controls input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.chart-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.chart-container {
+    flex: 1;
+}
+
+.chart-info {
+    width: 350px; /* 从200px增加到300px */
+    padding: 10px;
+    border-left: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+.chart-info div {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.line {
+    stroke-width: 2;
+    fill: none;
+}
+
+/* 移除对circle的全局样式设置，避免覆盖JavaScript中的动态设置 */
